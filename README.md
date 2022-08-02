@@ -1,4 +1,3 @@
-**Read in other languages: [Русский](README.md), [Polska](README.pl.md).**
 # goit-react-hw-01-components
 
 Code resources are taken from following repository:
