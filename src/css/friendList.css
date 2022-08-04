@@ -1,0 +1,15 @@
+.status {
+  background: green;
+  width: 20px;
+  height: 20px;
+  border: azure;
+  display: inline-block;
+  border-radius: 50%;
+}
+.inactive {
+  background: red;
+}
+.friend-list__item {
+  display: flex;
+  margin: 20px;
+}

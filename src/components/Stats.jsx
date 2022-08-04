@@ -1,13 +1,13 @@
-export const Stats = ({ data, title }) => {
+export const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+    <section className="statistics">
+      {(title = '' ? null : <h2 className="title">{title}</h2>)}
 
-      <ul class="stat-list">
-        {data.map(({ id, label, percentage }) => (
-          <li key={id} class="item">
-            <span class="label">{label}</span>
-            <span class="percentage">{percentage}</span>
+      <ul className="stat-list">
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id} className="item">
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}</span>
           </li>
         ))}
       </ul>

@@ -1,6 +1,8 @@
 /* @import-normalize; bring in normalize.css styles */
 @import '~@csstools/normalize.css';
 @import './css/profile.css';
+@import './css/statistics.css';
+@import './css/friendList.css';
 
 body {
   margin: 0;
@@ -23,5 +25,8 @@ ul {
 }
 
 p {
+  margin: 0;
+}
+h2 {
   margin: 0;
 }
