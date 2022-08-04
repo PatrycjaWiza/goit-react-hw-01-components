@@ -3,6 +3,7 @@
 @import './css/profile.css';
 @import './css/statistics.css';
 @import './css/friendList.css';
+@import './css/transactions.css';
 
 body {
   margin: 0;
