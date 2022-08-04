@@ -7,27 +7,33 @@ import { Statistics } from './Stats';
 import friends from '../friend-list/friends.json';
 import { FriendList, FriendListItem } from './Friendlist';
 
+import transactions from '../transaction-history/transactions.json';
+import { TransactionHistory } from './Transactions';
+
 export const App = () => {
   return (
     <div>
-      <div>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-        />
-      </div>
-      <div>
-        {/* Statistic component with title */}
-        <Statistics title="Upload stats" stats={data} />
-        {/* Statistics component without title */}
-        {/* <Statistics stats={data} /> */}
-      </div>
-      <FriendList friends={friends}>
+      {/* profile component */}
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+
+      {/* Statistic component with title */}
+      <Statistics title="Upload stats" stats={data} />
+      {/* Statistics component without title */}
+      {/* <Statistics stats={data} /> */}
+
+      {/* Friendlist component */}
+      <FriendList>
         <FriendListItem friends={friends} />
       </FriendList>
+
+      {/* Transaction History component */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
