@@ -22,21 +22,21 @@ const Title = styled.h2`
 const StatList = styled.ul`
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: darkorchid;
 `;
 const Item = styled.li`
   flex-basis: 100%;
   padding: 10px 0;
   background-color: ${props => (props.key ? '' : RandomColor)};
   font-size: 10px;
-  mix-blend-mode: difference;
+  mix-blend-mode: screen;
 
   & span {
     display: flex;
     margin-bottom: 5px;
     justify-content: center;
     color: white;
-    mix-blend-mode: screen;
+    mix-blend-mode: difference;
 
     &:nth-child(even) {
       font-size: 14px;
