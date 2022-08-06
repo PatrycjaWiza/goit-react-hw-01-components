@@ -15,16 +15,33 @@ const Title = styled.h2`
   padding: 20px;
   font-size: 16px;
   color: gray;
+  font-weight: 500;
 `;
 const StatList = styled.ul`
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   font-weight: ${props => (props.bold ? 600 : 400)};
   margin-bottom: 5px;
 `;
-
 const Item = styled.li`
-  padding: 5px 7.3px 10px;
-  text-align: center;
+  flex-basis: 100%;  
+  padding: 10px 0;
   background: ${props => (props.key ? '' : RandomColor)};
-`;
+  color: whitesmoke;
+
+  mix-blend-mode: revert;
+ 
+ font-size: 10px;
+
+  & span{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
+
+    &:nth-child(even){
+      font-size: 14px;
+    }
+  }
+}
+  `;
 export { Statistic, StatList, Title, Item };

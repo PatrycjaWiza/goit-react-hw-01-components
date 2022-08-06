@@ -23,19 +23,19 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <li>
           <Label>Followers</Label>
           <Label bold className="quantity">
-            {stats.followers}
+            {stats.followers.toLocaleString('en')}
           </Label>
         </li>
         <li>
           <Label>Views</Label>
           <Label bold className="quantity">
-            {stats.views}
+            {stats.views.toLocaleString('en')}
           </Label>
         </li>
         <li>
           <Label>Likes</Label>
           <Label bold className="quantity">
-            {stats.likes}
+            {stats.likes.toLocaleString('en')}
           </Label>
         </li>
       </Stats>
