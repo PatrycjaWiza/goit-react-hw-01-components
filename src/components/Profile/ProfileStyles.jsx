@@ -7,6 +7,7 @@ const ProfileCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background: white;
   border-radius: 10px;
+  overflow: hidden;
 `;
 const Description = styled.div`
   padding: 30px 20px 20px;
@@ -31,14 +32,10 @@ const Stats = styled.ul`
   display: flex;
   background: whitesmoke;
   justify-content: space-between;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   & li {
     flex-basis: 100%;
     padding: 10px 0 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
   }
 `;
 const Label = styled.span`

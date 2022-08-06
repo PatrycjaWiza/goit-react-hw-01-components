@@ -1,3 +1,5 @@
+import { GlobalStyle } from './GlobalStyles';
+
 import user from '../social-profile/user.json';
 import { Profile } from './Profile/Profile';
 
@@ -13,6 +15,8 @@ import { TransactionHistory } from './Transactions/Transactions';
 export const App = () => {
   return (
     <div>
+      <GlobalStyle />
+
       {/* profile component */}
       <Profile
         username={user.username}

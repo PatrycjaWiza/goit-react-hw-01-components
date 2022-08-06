@@ -8,6 +8,8 @@ const Statistic = styled.section`
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   max-width: 260px;
   margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
 `;
 const Title = styled.h2`
   background-color: white;
@@ -20,28 +22,25 @@ const Title = styled.h2`
 const StatList = styled.ul`
   display: flex;
   justify-content: space-between;
-  font-weight: ${props => (props.bold ? 600 : 400)};
-  margin-bottom: 5px;
+  background-color: black;
 `;
 const Item = styled.li`
-  flex-basis: 100%;  
+  flex-basis: 100%;
   padding: 10px 0;
-  background: ${props => (props.key ? '' : RandomColor)};
-  color: whitesmoke;
+  background-color: ${props => (props.key ? '' : RandomColor)};
+  font-size: 10px;
+  mix-blend-mode: difference;
 
-  mix-blend-mode: revert;
- 
- font-size: 10px;
-
-  & span{
+  & span {
     display: flex;
     margin-bottom: 5px;
     justify-content: center;
+    color: white;
+    mix-blend-mode: screen;
 
-    &:nth-child(even){
+    &:nth-child(even) {
       font-size: 14px;
     }
   }
-}
-  `;
+`;
 export { Statistic, StatList, Title, Item };
